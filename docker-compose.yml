@@ -1,0 +1,8 @@
+services:
+  java-web-application:
+    container_name: web-application
+    build: .
+    volumes:
+      - ./target/web_server-0.0.1-SNAPSHOT.jar:/app.jar
+    ports:
+      - "8080:8080"
